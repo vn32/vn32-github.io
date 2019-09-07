@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+	<title>animation and column	</title>
+	<style>
+	#div1{
+	background:orange;
+	width:200px;
+	height:200px;
+	border:1px solid black;
+	margin:10px;
+	animation-name:anim1;
+	animation-duration:4s;
+	}
+	@keyframes anim1{
+	from {background:orange;}
+	to {background:red;}
+	}
+	#div2{
+	background:orange;
+	width:200px;
+	height:200px;
+	border:1px solid black;
+	margin:10px;
+	animation-name:anim2;
+	animation-duration:4s;
+	animation-iteration-count:3;
+	border-radius:0;
+	
+	}
+	@keyframes anim2{
+	0% {background:orange; border-radius:0;}
+	20% {background:red; 	border-radius:100px;}
+	40% {background:blue; border-radius:150px;}
+	60% {background:black; border-radius:100px;}
+	100% {background:orange; border-radius:0;}
+	}
+	#div3{
+	background:orange;
+	width:200px;
+	height:200px;
+	border:1px solid black;
+	margin:10px;
+	animation-name:anim3;
+	animation-duration:4s;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+	}
+	@keyframes anim3{
+	0% {background:orange; width:200px;}
+	20% {background:red; width:250px;}
+	40% {background:blue; width:300px;}
+	60% {background:black; width:350px;}
+	100% {background:orange; width:200px;}
+	}
+	p{
+	column-count:3;
+	background:silver;
+	border:1px black solid;
+	padding:10px;
+	column-gap:50px;
+	column-rule:10px dotted red;
+	}
+	
+	</style>
+</head>
+<body>
+<!-- An animation lets an element gradually change from one style to another
+When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.
+Keyframes hold what styles the element will have at certain times.
+.-->
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"></div>
+<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam 
+		rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+		 quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+		 ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim a
+		 d minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequa
+		tur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui 
+			dolorem eum fugiat quo voluptas nulla pariatur?</p>
+	
+</body>
+</html>

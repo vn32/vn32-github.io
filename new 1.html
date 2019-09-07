@@ -1,0 +1,100 @@
+<!doctype html>
+<head>
+	<title>semantic layout</title>
+	<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	#container{
+		background:#f1f1f1;
+		width:1200px;
+		height:560px;
+		margin:0 auto;
+		border:2px black solid;
+	}
+	header{
+		background:brown;
+		width:1200px;
+		height:60px;
+		color:white;
+	}
+	nav{
+		background:orange;
+		width:1200px;
+		height:50px;
+	
+	}
+	section header{
+		background:none;
+		width:0;
+		height:0;
+	}
+	section{
+		background:green;
+		width:800px;
+		height:400px;
+		float:left;
+	}
+	aside{
+		background:blue;
+		width:400px;
+		height:400px;
+		float:left;
+	}
+	footer{
+		background:brown;
+		width:1200px;
+		height:50px;
+	}
+	nav ul{
+		list-style:none;
+	}
+	nav ul li{
+		float:left;
+		padding:15px 0px;
+		width:240px;
+		text-align:center;
+	
+	}
+	nav ul li:hover{
+	color:white;
+	}
+	main section header{
+		background:brown;
+		width:800px;
+		height:50px;
+		color:white;
+	}
+	</style>
+</head>
+<body>
+<div id="container">
+<header>
+<h1>The Web Page</h1>
+</header>
+<nav>
+<ul>
+	<li>Home</li>
+	<li>Technology</li>
+	<li>Science</li>
+	<li>Physics</li>
+	<li>Chemistry</li>
+</ul>
+</nav>
+<main>
+	<section>
+		<header>
+		<h3>Health is Wealth</h3>
+		</header>
+		<article>
+		<p>hyper text marksaskcbasdbusn kcjafnifdhasudvhbfvbfhnvivdjcudci</p>
+		</article>
+	</section>
+	<aside></aside>
+	<div style="clear:both;"></div>
+</main>
+<footer></footer>
+</div>
+</body>
+</html>

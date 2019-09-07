@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+	<title>html5 new element& use chrome</title>
+	<style>
+	#div1{
+	height:200px;
+	width:400px;
+	background:silver;
+	}
+	</style>
+</head>
+<body>
+<!--to show downloading or file transfer progress we use meter or progress tag
+in progress tag min value is zero-->
+
+
+	<progress max="100" value="50"></progress>
+	<meter min="10" max="100" value="50"></meter>
+	<br>
+<!-- summary and details tag are used to show summary of a work
+summary tag is used for heading purpose and this tags are not supported for internet explorer also meter tag so use chrome-->
+	<details>
+		<summary>the para</summary>
+		<p>you can use any tag but at the web page it will show only the para ,after clicking the para it will show all details</p>
+		<ul>
+			<li>math</li>
+			<li>physics</li>
+			<li>machine learning</li>
+			<li>deep learning</li>
+			<li>artificial intelligence</li>
+		</ul>
+	
+	
+	</details>
+	<!-- figure tag is used to put some caption on audio or video or images by using figcaption tag inside it-->
+	<figure>
+		<img src="myimage.jpg" alt="my pic" title="mypic">
+		<figcaption>this is figure 1.1</figcaption>
+	</figure>
+	<!--difference between wbr and br tag
+	first wbr tag if do any affect because no word break is needed but second word break is affect the word-->
+	<div id="div1">
+	 summary and details tag are <wbr>used to show summaryofawork<wbr>summarytag is used for heading purpose and this tags are not supported for internet explorer also meter tag so use chrome-->
+ summary and details tag are used to show summary of a work
+summary tag is used for heading purpose and this tags are not supported for internet explorer also meter tag so use chrome-->
+ summary and details tag are used to show summary of a work
+summary tag is used for heading purpose and this tags are not supported for internet explorer also meter tag so use chrome-->
+	</div>
+
+	
+</body>
+</html>

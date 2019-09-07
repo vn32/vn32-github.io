@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+	<title>css3 text	</title>
+	<style>
+	#div1{
+		background:orange;
+		width:200px;
+		border:1px solid black;
+		margin:10px;
+		white-space:nowrap;
+		overflow:hidden;
+	
+	}
+	#div2{
+		background:orange;
+		width:200px;
+		border:1px solid black;
+		margin:10px;
+		white-space:nowrap;
+		overflow:hidden;
+		text-overflow:ellipsis;
+		
+	}
+	#div3{
+		background:orange;
+		width:200px;
+		border:1px solid black;
+		margin:10px;
+		white-space:pre-line;
+		overflow:visible;
+	
+	}
+	#div4{
+		background:orange;
+		width:200px;
+		border:1px solid black;
+		margin:10px;
+		word-wrap:break-word;
+	
+	}
+	#div5{
+		background:orange;
+		width:200px;
+		border:1px solid black;
+		margin:10px;
+		word-break:break-all;
+	
+	}
+
+	
+	
+	
+	</style>
+</head>
+<body>
+<!-- 
+white-space is a CSS property that helps control how whitespace and line breaks within an element's text are treated.
+
+The white-space property can take these values:
+
+normal: The default value. Multiple whitespaces are collapsed into one. The text wraps to the next line when needed.
+nowrap: Multiple whitespaces are collapsed into one, but the text doesn’t wrap to the next line..
+pre: Same results as using the <pre> where all the whitespaces will be kept as is and the text only wraps when line breaks are in the content.
+pre-line: Multiple whitespaces are collapsed into one, the text breaks to the next line when needed or with line breaks in the content.
+pre-wrap: Similar to pre, but the text also wraps when needed.
+-->
+	<div id="div1">The Text,the basic text without any meaning we are learning.</div>
+	<div id="div2">The Text,the basic text without any meaning we are learning.</div>
+	<div id="div3">The Text,the basic text without any meaning we are learning.</div>
+	<!-- 		word-wrap:break-word; is work when a sentence is going out of box
+	but some spaces is left, to overcome this we use word-break:break-all; it takes care of spaces and sentences which is going out of box
+	-->
+	<div id="div4">The Text,the basic text withoutanymeaningwearelearning.</div>
+	<div id="div5">The Text,the basic text withoutany meaningwearelearning.</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+	<title>transition</title>
+	<style>
+	#div1{
+	background:orange;
+	width:200px;
+	height:200px;
+	border:1px solid black;
+	transition:background 2s,width 5s linear;
+	margin:10px;
+	}
+	#div1:hover{
+	background:brown;
+	width:400px;
+	}
+	#div2{
+	background:orange;
+	width:200px;
+	height:200px;
+	border:1px solid black;
+	transition:background 2s,width 3s ease-in;/*or ease-out */
+	margin:10px;
+	}
+	#div2:hover{
+	background:blue;
+	width:400px;
+	}
+	
+	</style>
+</head>
+<body>
+<!-- syntax   --transition: property duration timing-function delay|initial|inherit;
+we can add property from hover inside the transition to make it more beautifull.-->
+	<div id="div1"></div>
+	<div id="div2"></div>
+</body>
+</html>

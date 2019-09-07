@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+	<title>multimedia</title>
+</head>
+<body>
+<!-- audio/video with source tag is used.here controls tag is very important without this audio or video will not show
+we can use muted tag for muting of multimeda by default
+we can use loop tag for continuing the multimedia
+autoplay for autimatic play by default it use used to announcing with the start of web page :autoplay well supported in opera and ie-->
+<audio controls muted loop autoplay>
+	<source src="audio1.mp3" type="audio/mpeg"></source>
+</audio>
+<!-- while using auto mode in preload attribute all the songs will loaded automatically while loading the web page-->
+<audio controls muted loop preload="auto">
+	<source src="audio1.mp3" type="audio/mpeg"></source>
+</audio>
+<!-- no audio will load while loading the page by using none mode-->
+<audio controls muted loop preload="none">
+	<source src="audio1.mp3" type="audio/mpeg"></source>
+</audio>
+<!-- only that audio will load that will clicked by user by using metadata mode-->
+<audio controls muted loop preload="metadata">
+	<source src="audio1.mp3" type="audio/mpeg"></source>
+</audio>
+<video controls width="200px" poster="myimage.jpg">
+	<source src="video1.mp4" type="video/mp4"></source>
+</video>
+	
+</body>
+</html>

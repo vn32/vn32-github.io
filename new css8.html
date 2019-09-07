@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+	<title>html5 and css3 forms elements</title>
+	<style>
+	form{
+	background:#f1f1f1;
+	box-sizing:border-box; /*The box-sizing property allows us to include the padding and border in an element's total width and height.
+	                                                     If you set box-sizing: border-box; on an element padding and border are included in the width and height: */
+	width:600px;
+	margin:0 auto;
+	padding:10px;
+	font-family:arial;
+	
+	}
+		.form-group {
+		margin:20px 0;
+		
+		}
+		.form-group input{
+		display:block;
+		width:100%;
+		padding:10px;
+		box-sizing:border-box;
+		border:1px black gray;
+		box-shadow:inset 0px 0px 10px silver,0 0 0 brown;
+		outline:none;
+		transition:box-shadow 4s;
+		}
+		.form-group label{
+		font-size:20px;
+		}
+		.form-group input:focus{
+		box-shadow:inset 0 0 0 silver,0 0 10px brown ;
+	</style>
+</head>
+<body>
+<!-- placeholder is used to show a deem text inside the input section
+      required proprty is used to validate the input -->
+	<form>
+	<h1>The Form</h1><hr>
+		<div class="form-group">
+		<label for="user-name">User Name *</label>
+		<input type="text" id="user-name" required placeholder="enter your name">
+		
+		</div>
+		<div class="form-group">
+		<label for="user-name">Password *</label>
+		<input type="password" id="user-name" required placeholder="insert your password">
+		
+		</div>
+		<div class="form-group">
+		<label for="user-name">E-mail</label>
+		<input type="email" id="user-name">
+		
+		</div>
+		<div class="form-group">
+		<label for="user-name">Contact number</label>
+		<input type="number" id="user-name">
+		
+		</div>
+		<div class="form-group">
+		<label for="user-name">birthday</label>
+		<input type="date" id="user-name">
+		</div>
+		<div class="form-group">
+		<label for="user-name">week</label>
+		<input type="week" id="user-name">
+		</div>
+		<div class="form-group">
+		<label for="user-name">month</label>
+		<input type="month" id="user-name">
+		</div>
+		<div class="form-group">
+		<label for="user-name">time</label>
+		<input type="time" id="user-name">
+		</div>
+		<div class="form-group">
+		<label for="user-name">range</label>
+		<input type="range" id="user-name" min="1" max="10" step="3">
+		</div>
+		<div class="form-group">
+		<label for="user-name">select color</label>
+		<input type="color" id="user-name">
+		</div>
+		<input type="color" id="user-name">
+		<div class="form-group">
+		<label for="user-name">The web page</label>
+		<input type="url" id="user-name">
+		</div>
+		<div class="form-group">
+		<label for="user-name">select your country</label>
+		<input list="country">
+		<datalist id="country">
+			<option>India</option>
+			<option>Srilanka</option>
+			<option>Nepal</option>
+			<option>Bhutan</option>
+			<option>Bangladesh</option>
+		</datalist>
+		</div>
+		<div class="form-group">
+		<input type="submit" value="Submit Form">
+		
+		</div>
+	</form>
+</body>
+</html>
